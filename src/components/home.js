@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
+import Header from './header';
 
-import Header from './header'
-import Card from './card'
+import Card from './card';
 
-class Home extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div className="home">
-        { Header() }
-        <Card />
+       { Header('MadLibs', 'Fill out the feilds below and click the generate button to see the Mad Lib story.') }
+       <Card />
       </div>
     );
   }
 }
-
-export default Home;
